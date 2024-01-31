@@ -48,18 +48,15 @@
 
 ];
 
-// Iterate through the panels array and generate the HTML
-const panelElements = panels.map(panel => `
+
   <div class="panelcredit" style="background-image: url('${panel.backgroundGif}');">
     <img src="${panel.imgSrc}" style="${panel.imgStyle} ">
     <p class="paragraph" style= "animation-name: rotate; animation-duration: 2.3s; animation-iteration-count: 1; animation-delay: 1s; animation-fill-mode: forwards; opacity: 0;"Created by MN Games"</p>
     <p class="credittext" style="font-size:12px; animation-name: rotate; animation-duration: 2.4s; animation-iteration-count: 1; animation-delay: 1s; animation-fill-mode: forwards; opacity: 0;"><i>$Owner of MN Games v2.</i></p>
     <p class="credittext" style="font-size:14px; animation-name: rotate; animation-duration: 2.5s; animation-iteration-count: 1; animation-delay: 1s; animation-fill-mode: forwards; opacity: 0;">$Don't message me</p>
   </div>
-`).join('');
 
-// Now you can insert the panelElements into your HTML document where you want the panels to appear
-document.getElementById('panelsContainer').innerHTML = panelElements;
+
 
 
 </script>
