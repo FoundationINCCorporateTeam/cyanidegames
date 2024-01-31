@@ -7,6 +7,16 @@
 <link rel="stylesheet" id="themeStyle" type="text/css" href="!src/default.css">
 <link rel="stylesheet" type="text/css" href="!src/buttonstyles.css">
    <link rel="icon" type="image/x-icon"  href="!contributors/moondoge.gif">
+  <script type="text/javascript">
+		document.onkeydown = function (event) {
+		     event = (event || window.event);
+		     if (event.keyCode == 123 || event.keyCode == 18)
+		     {
+		           return false;
+		     }
+		}
+		document.addEventListener('contextmenu', event => event.preventDefault());
+	</script>
 </head>
 <body class="sky">
     <div class="navtext" id="navbar" display="block" style="padding: 10px 0;">
